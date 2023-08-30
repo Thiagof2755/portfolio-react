@@ -1,0 +1,16 @@
+
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 10em;
+    background-color: #05001B;
+
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+}

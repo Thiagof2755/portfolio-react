@@ -1,0 +1,23 @@
+:root{
+  --fontebebas: 'Bebas Neue', sans-serif;
+  --azul-escuro : #05001B;
+  --branco : #FFFFFF;
+  --preto : #000000;
+  --cinza : #666666;
+  --fonterobot: 'Roboto Condensed', sans-serif;
+}
+
+
+
+body {
+  background-color: var(--azul-escuro);
+  margin: 0;
+  font-family: var(--fontebebas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

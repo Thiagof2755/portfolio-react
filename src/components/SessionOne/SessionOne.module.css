@@ -1,0 +1,36 @@
+:root{
+    --fontebebas: 'Bebas Neue', sans-serif;
+    --azul-escuro : #05001B;
+    --branco : #FFFFFF;
+    --preto : #000000;
+    --cinza : #666666;
+    --fonterobot: 'Roboto Condensed', sans-serif;
+    --fontepoppins: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+.box{
+    padding: 0.5em 10em;
+    margin-top: 5em;
+    color: white;
+    font-family: var(--fontebebas)
+    
+
+    
+}
+
+.box h1:first-child {
+    font-size: 4em;
+}
+.box h1:nth-child(2) {
+    font-size: 8em;
+    margin-top: -5rem; 
+}
+
+.box h2{
+    margin-top: -7rem; 
+}

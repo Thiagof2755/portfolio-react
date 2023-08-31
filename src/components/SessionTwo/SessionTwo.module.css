@@ -3,7 +3,7 @@
     --azul-escuro : #05001B;
     --branco : #FFFFFF;
     --preto : #000000;
-    --cinza : #666666;
+    --cinza : #949494;
     --fonterobot: 'Roboto Condensed', sans-serif;
     --fontepoppins: 'Poppins', sans-serif;
 }
@@ -12,16 +12,17 @@
     display: flex;
     flex-direction: column; /* Para alinhar os itens verticalmente */
     height: 100vh; /* Define a altura do contêiner como 100% da altura da viewport */
-}
+  }
 
 .box{
     padding: 0.5em 10em;
-    margin-top: 5em;
+    margin-top: -5em;
     color: white;
     font-family: var(--fontebebas) 
 }
 
 .box h1:first-child {
+    opacity: 50%;
     font-size: 4em;
 }
 .box h1:nth-child(2) {
@@ -42,6 +43,26 @@
     width: 50vw; /* Largura igual a 50% da largura da tela */
     /* styles.module.css */
 }
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.about {
+    font-size: 130%;
+    color: var(--cinza);;
+    margin-top: -.5em;
+    margin-left: 10em;
+    margin-left: 0em;
+    
+}
+
+
 
 
 

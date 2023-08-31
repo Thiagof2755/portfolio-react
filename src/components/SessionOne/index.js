@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./SessionOne.module.css";
-
+import FaceImage from "./Face.png";
 function SessionOne() {
     return (
         //container
@@ -10,6 +9,9 @@ function SessionOne() {
                 <h1>OLA MEU NOME É</h1>
                 <h1>THIAGO ALVES</h1>
                 <h2>Transformando linhas de código em experiências digitais memoráveis</h2>
+            </div>
+            <div className={styles.face}>
+                <img src={FaceImage} alt="face" />
             </div>
         </div>
     );

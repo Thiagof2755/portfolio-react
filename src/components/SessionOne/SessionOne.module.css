@@ -10,8 +10,10 @@
 
 .container {
     display: flex;
-    flex-direction: column; /* Para alinhar os itens verticalmente */
     height: 100vh; /* Define a altura do contêiner como 100% da altura da viewport */
+    justify-content: space-between;
+
+    
 }
 
 .box{
@@ -35,13 +37,9 @@
 
 .face {
     display: flex;
-    justify-content: right;
-    margin-top: 0;
-    left: 75%; /* Metade da largura da tela */
-    position: absolute;
-    width: 50vw; /* Largura igual a 50% da largura da tela */
-    /* styles.module.css */
-}
+    justify-content: flex-end;
+    margin-top: 0;    
 
+}
 
 

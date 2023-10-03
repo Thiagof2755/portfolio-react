@@ -1,74 +1,25 @@
-:root {
+:root{
     --fontebebas: 'Bebas Neue', sans-serif;
-    --azul-escuro: #05001B;
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --cinza: #666666;
+    --azul-escuro : #05001B;
+    --branco : #FFFFFF;
+    --preto : #000000;
+    --cinza : #949494;
     --fonterobot: 'Roboto Condensed', sans-serif;
     --fontepoppins: 'Poppins', sans-serif;
 }
 
 .container {
-    margin-top: 30em;
-    display: flex;
-    position: relative;
-    height: 100vh;
-    /* Define a altura do contêiner como 100% da altura da viewport */
-}
-
-.box {
-    padding: 0.5em 10em;
-    margin-top: -5em;
-    color: white;
-    font-family: var(--fontebebas)
-}
-
-.box h1:first-child {
-    opacity: 50%;
-    font-size: 4em;
-}
-
-.box h1:nth-child(2) {
-    font-size: 8em;
-    margin-top: -5rem;
-}
-
-.center {
     display: flex;
     justify-content: center;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content:  center;
     align-items: center;
     margin-top: 1em;
     margin-bottom: 5em;
+    margin-top: 0;
     flex-wrap: wrap;
-    gap: 5em;
-}
-
-.hexagon {
-    width: 96.75px;
-    height: 150px;
-    background-image: linear-gradient(90deg, #00ffb8, #13ce9a);
-    border-radius: 15px;
-    transition: transform 400ms ease;
-}
-.hexagon:hover {
-    transform: rotate(30deg);
-}
-.hexagon:before, .hexagon:after {
-    content: '';
-    display: block;
-    position:unset;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: inherit;
-    height: inherit;
-    background-image: inherit;
-    border-radius: inherit;
-}
-.hexagon:before {
-    transform: rotate(60deg);
-}
-.hexagon:after {
-    transform: rotate(-60deg);
+    gap: 3em;
 }

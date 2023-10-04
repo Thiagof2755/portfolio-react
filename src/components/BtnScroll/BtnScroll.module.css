@@ -1,0 +1,21 @@
+.btnContainer {
+    cursor: pointer;
+  }
+  
+  .btn {
+    width: 60px;
+    animation: jumping 1s linear infinite;
+  }
+  
+  @keyframes jumping {
+    from {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  

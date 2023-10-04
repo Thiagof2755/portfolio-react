@@ -1,45 +1,55 @@
-:root{
+:root {
     --fontebebas: 'Bebas Neue', sans-serif;
-    --azul-escuro : #05001B;
-    --branco : #FFFFFF;
-    --preto : #000000;
-    --cinza : #666666;
+    --azul-escuro: #05001B;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #666666;
     --fonterobot: 'Roboto Condensed', sans-serif;
     --fontepoppins: 'Poppins', sans-serif;
 }
 
 .container {
     display: flex;
-    height: 100vh; /* Define a altura do contêiner como 100% da altura da viewport */
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
 
-    
 }
 
-.box{
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
     padding: 0.5em 10em;
     margin-top: 5em;
     color: white;
-    font-family: var(--fontebebas) 
+    font-family: var(--fontebebas);
 }
 
 .box h1:first-child {
     font-size: 4em;
 }
+
 .box h1:nth-child(2) {
     font-size: 8em;
-    margin-top: -5rem; 
+    margin-top: -5rem;
 }
 
-.box h2{
-    margin-top: -7rem; 
+.box h2 {
+    margin-top: -7rem;
 }
 
 .face {
     display: flex;
     justify-content: flex-end;
-    margin-top: 0;    
-
+    margin-top: 0;
 }
 
-
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Isso empurra .btnContainer para a parte inferior da .container */
+    padding-bottom: 5%;
+}

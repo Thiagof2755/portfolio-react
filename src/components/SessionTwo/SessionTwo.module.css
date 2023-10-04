@@ -9,12 +9,13 @@
 }
 
 .container {
+
     display: flex;
 
 }
 .box{
     padding: 0.5em 10em;
-    margin-top: 0%;
+    margin-top: -5%;
     color: white;
     font-family: var(--fontebebas) 
 }

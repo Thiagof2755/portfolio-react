@@ -6,7 +6,7 @@ import Nav from "../Nav/index";
 function Navbar() {
     return (
         <header className={styles.NavBar}>    
-            <Link to="/" className={styles.logo}>Logo</Link>
+            <Link to="/" className={styles.logo}>Thiago.Dev</Link>
             <nav>
                 <Nav url="/">Home</Nav>
                 <Nav url="/sobre">Sobre</Nav>

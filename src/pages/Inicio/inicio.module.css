@@ -15,4 +15,8 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: #424242;
   }
+
+  .SessionOne , .SessionTwo, .Sessionthree , .SessionFour{
+    visibility: hidden;
+  } 
   

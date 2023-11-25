@@ -21,6 +21,9 @@ jobs:
     needs: checkout
 
     steps:
+      - name: Change to project directory
+        run: cd portfolio-react  # Substitua pelo caminho real se necessário
+
       - name: Use Node.js 16
         uses: actions/setup-node@v3
         with:

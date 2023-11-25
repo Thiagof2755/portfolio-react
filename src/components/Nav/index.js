@@ -1,9 +1,18 @@
-import { Link } from "react-router-dom";
-import styles from "./Nav.module.css";
 
-function Nav({ url, children }) {
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Nav({ url, external, children }) {
+    if (external) {
+        return (
+            <a href={url} target="_blank" rel="noopener noreferrer">
+                {children}
+            </a>
+        );
+    }
+
     return (
-        <Link to={url} className={styles.link}>
+        <Link to={url}>
             {children}
         </Link>
     );

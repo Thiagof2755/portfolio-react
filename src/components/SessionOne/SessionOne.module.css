@@ -13,7 +13,6 @@
     flex-direction: column;
     height: 100vh;
     justify-content: flex-start;
-
 }
 
 .space {
@@ -41,15 +40,19 @@
     margin-top: -7rem;
 }
 
-.face {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0;
-}
-
 .btnContainer {
     display: flex;
     justify-content: center;
-    margin-top: auto; /* Isso empurra .btnContainer para a parte inferior da .container */
+    margin-top: auto; 
     padding-bottom: 5%;
+}
+
+.face img {
+    margin-top:3vw;
+    width: 35vw;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+    filter: drop-shadow(0px 0px 60px rgb(0, 93, 105));
 }

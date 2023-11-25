@@ -78,3 +78,10 @@
     background-color: #0fe3ff;
     transform: scale(1.01);
 }
+.popup {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

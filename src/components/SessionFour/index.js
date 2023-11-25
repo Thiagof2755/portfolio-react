@@ -6,6 +6,7 @@ function SessionFour() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -16,20 +17,26 @@ function SessionFour() {
         }
 
         const templateParams = {
-            from_name :name,
-            email : email,
-            message : message
+            from_name: name,
+            email: email,
+            message: message
         }
 
-        emailjs.send("service_skm2ojm","template_1am1r7b", templateParams, "025t6nGdCh3mZ3bq5")
-        .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            setName('');
-            setEmail('');
-            setMessage('');
-        }, (err) => {
-            console.log('FAILED...', err);
-        })
+        emailjs.send("service_skm2ojm", "template_1am1r7b", templateParams, "O47DjVXL7YC0OMyta")
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setName('');
+                setEmail('');
+                setMessage('');
+                setShowPopup(true);
+
+                // Esconder o pop-up após 3 segundos (3000 milissegundos)
+                setTimeout(() => {
+                    setShowPopup(false);
+                }, 3000);
+            }, (err) => {
+                console.log('FAILED...', err);
+            });
     }
 
     return (
@@ -64,6 +71,10 @@ function SessionFour() {
                 />
 
                 <input className={styles.button} type="submit" value="Enviar" />
+
+                {showPopup && (
+                    <div className={styles.popup}>Enviado!</div>
+                )}
             </form>
         </div>
     );

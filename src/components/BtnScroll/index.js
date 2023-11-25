@@ -31,5 +31,4 @@ const BtnScroll = () => {
     )
   );
 };
-
 export default BtnScroll;

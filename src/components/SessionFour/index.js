@@ -22,7 +22,7 @@ function SessionFour() {
             message: message
         }
 
-        emailjs.send("service_skm2ojm", "template_1am1r7b", templateParams, "O47DjVXL7YC0OMyta")
+        emailjs.send("service_skm2ojm", "template_1am1r7b", templateParams, "LrOyaofOWY4qDHuvX")
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 setName('');
@@ -30,11 +30,12 @@ function SessionFour() {
                 setMessage('');
                 setShowPopup(true);
 
-                // Esconder o pop-up após 3 segundos (3000 milissegundos)
+                // Esconder o pop-up após 2 segundos (2000 milissegundos)
                 setTimeout(() => {
                     setShowPopup(false);
-                }, 3000);
-            }, (err) => {
+                }, 2000);
+            })
+            .catch((err) => {
                 console.log('FAILED...', err);
             });
     }
@@ -42,6 +43,13 @@ function SessionFour() {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Contato</h1>
+
+            {showPopup && (
+                <div className={styles.popup}>
+                    Enviado com sucesso!
+                </div>
+            )}
+
 
             <form className={styles.form} onSubmit={sendEmail} method="post">
                 <input
@@ -71,10 +79,6 @@ function SessionFour() {
                 />
 
                 <input className={styles.button} type="submit" value="Enviar" />
-
-                {showPopup && (
-                    <div className={styles.popup}>Enviado!</div>
-                )}
             </form>
         </div>
     );

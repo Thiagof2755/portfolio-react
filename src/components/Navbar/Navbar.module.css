@@ -4,17 +4,46 @@
     align-items: center;
     padding: 0.5em 5em;
     background-color: #05001B;
+    /* outros estilos */
 }
 
 .logo {
     color: white;
     text-decoration: none;
     font-size: xx-large;
+    /* outros estilos */
 }
+
 .icons {
-    display: flex; 
+    display: flex;
+    /* outros estilos */
 }
 
 .icons img {
-    margin-right: 40px; 
+    margin-right: 40px;
+    /* outros estilos */
 }
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-top: auto;
+    margin-left: 10%;
+    font-size: xx-large;
+    /* outros estilos */
+}
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    .NavBar {
+        padding: 0.5em 2em; /* Menor padding */
+    }
+
+    .logo, .icons img, .link {
+        font-size: large; /* Tamanho de fonte menor */
+        margin-right: 10px; /* Menor margem */
+    }
+
+    /* Adicione estilos para o menu hamburger aqui, se necessário */
+}
+

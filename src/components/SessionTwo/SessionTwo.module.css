@@ -43,6 +43,32 @@
     
 }
 
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    .box {
+        padding: 0.5em 2em; /* Padding reduzido */
+        margin-top: 0; /* Removendo margem negativa */
+    }
+
+    .box h1:first-child,
+    .box h1:nth-child(2),
+    .box h2 {
+        font-size: 2em; /* Tamanho de fonte menor */
+        margin-top: 0.5em; /* Ajustando margens */
+    }
+
+    .about {
+        font-size: 100%; /* Tamanho da fonte ajustado */
+        margin: 0 1em; /* Ajustando margens */
+    }
+
+    /* Outros ajustes conforme necessário */
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas ainda menores */
+}
+
 
 
 

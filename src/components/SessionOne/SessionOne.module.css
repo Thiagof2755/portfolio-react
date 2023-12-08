@@ -130,15 +130,26 @@
     .box {
         width: 100%;
         padding: 1em;
-        margin: 0 auto;
+        color: white;
+        font-family: var(--fontebebas);
+        text-align: left; /* Adiciona alinhamento à esquerda */
+        margin-top: -8em;
     }
 
-    .box h1:first-child,
-    .box h1:nth-child(2),
-    .box h2 {
-        font-size: 2em; /* Redimensionando fontes para evitar sobreposição */
-        margin: 0.5em 0; /* Ajustando margem para espaçamento adequado */
+    .box h1:first-child {
+        font-size: 2em; /* Tamanho de fonte menor para a primeira linha */
     }
+
+    .box h1:nth-child(2) {
+        font-size: 4em; /* Tamanho de fonte menor para a segunda linha */
+        margin-top: -2rem; /* Ajuste o margin-top conforme necessário para dispositivos móveis */
+    }
+
+    .box h2 {
+        margin-top: -3rem; /* Ajuste o margin-top conforme necessário para dispositivos móveis */
+        font-size: 0.8em;
+    }
+
 
     .face {
         order: 3;
@@ -157,14 +168,3 @@
     }
 }
 
-@media (max-width: 480px) {
-    .box h1:first-child,
-    .box h1:nth-child(2),
-    .box h2 {
-        font-size: 1.5em; /* Fontes menores para telas muito pequenas */
-    }
-
-    .face {
-        width: 90%; /* Aumentando a imagem um pouco para telas menores */
-    }
-}

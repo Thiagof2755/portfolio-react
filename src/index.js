@@ -9,6 +9,7 @@ import SessionOne from './components/SessionOne/index';
 import SessionTwo from './components/SessionTwo/index';
 import Sessionthree from './components/Sessionthree/index';
 import SessionFour from './components/SessionFour/index';
+import SessionFive from './components/SessionFive/index';
 import styles from './pages/Inicio/inicio.module.css';
 import ScrollReveal from 'scrollreveal';
 
@@ -28,6 +29,17 @@ const App = () => {
       distance: '100px',
       origin: 'bottom',
     });
+    sr.reveal('.SessionFive', {
+      origin: 'bottom',
+      distance: '20px',
+      duration: 1000,
+      delay: 0,
+      opacity: 0,
+      scale: 0.8,
+      easing: 'ease',
+  });
+  
+  
   }, []);
 
   return (
@@ -47,6 +59,9 @@ const App = () => {
                 </div>
                 <div className={`Sessionthree ${styles.Sessionthree}`}>
                   <Sessionthree />
+                </div>
+                <div className={`SessionFive ${styles.SessionFive}`}>
+                  <SessionFive />
                 </div>
                 <div className={`SessionFour ${styles.SessionFour}`}>
                   <SessionFour />

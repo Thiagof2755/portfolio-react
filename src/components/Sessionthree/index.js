@@ -26,6 +26,7 @@ function Sessionthree() {
             imageSrc={Database}
             content=" Em relação a bancos de dados, sou competente em SQL, o que me permite projetar, consultar e gerenciar dados eficientemente. Compreendo a importância do armazenamento de dados e seu impacto nas aplicações."
             />
+            
         </div>
     </div>
 

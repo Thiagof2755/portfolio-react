@@ -11,16 +11,28 @@
 .container {
     display: flex;
     justify-content: center;
-
 }
 
 .cardContainer{
     display: flex;
+
     justify-content:  center;
     align-items: center;
     margin-top: 1em;
     margin-bottom: 0em;
-
     flex-wrap: wrap;
     gap: 3em;
 }
+
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;}
+
+    .card {
+        width: calc(33.33% - 1em); /* Calcula a largura para 3 cards por linha */
+        margin-bottom: 1em; /* Adiciona margem inferior para espaçamento entre os cards */
+    }
+}
+

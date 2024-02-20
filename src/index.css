@@ -7,11 +7,33 @@
   --fonterobot: 'Roboto Condensed', sans-serif;
 }
 
+* {
+
+  box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+  --fontebebas: 'Bebas Neue', sans-serif;
+  --azul-escuro: #05001B;
+}
+
+/* Corpo do Documento */
+body {
+  background-color: var(--azul-escuro);
+  font-family: var(--fontebebas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
 
 
 body {
   background-color: var(--azul-escuro);
   margin: 0;
+  padding: 0;
+
   font-family: var(--fontebebas);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

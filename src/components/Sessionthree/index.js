@@ -11,21 +11,22 @@ function Sessionthree() {
         //container
     <div className={styles.container}>
     <div className={styles.cardContainer}>
-            <Card className
+    <Card className
             title="FrontEnd"
             imageSrc={Front}
-            content="Minhas habilidades em linguagens como HTML, CSS e JavaScript capacitam-me a criar interfaces interativas e atraentes. Também estou à vontade com o framework React, que me possibilita construir componentes reutilizáveis e interfaces de usuário dinâmicas."
+            content="Experiente em React.JS e Vite para construir componentes reutilizáveis, consulmo de APIs e interfaces dinâmicas."
             />
             <Card 
             title="BackEnd"
             imageSrc={Back}
-            content="Tenho conhecimentos em PHP, o que me permite criar lógica robusta e funcionalidades dinâmicas para aplicações web. Além disso, estou familiarizado com o framework Laravel, que agiliza o desenvolvimento ."
+            content="Proficiente em Node.js e Express para desenvolvimento backend ágil e criação de API. Conhecimentos em PHP e Laravel."
             />
             <Card
             title="Database"
             imageSrc={Database}
-            content=" Em relação a bancos de dados, sou competente em SQL, o que me permite projetar, consultar e gerenciar dados eficientemente. Compreendo a importância do armazenamento de dados e seu impacto nas aplicações."
+            content="Competente em bancos de dados, como MongoDB. Habilidades em SQL para consulta eficiente de dados."
             />
+
             
         </div>
     </div>

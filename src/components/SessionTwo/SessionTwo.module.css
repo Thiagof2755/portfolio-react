@@ -11,6 +11,7 @@
 .container {
 
     display: flex;
+    
 
 }
 .box{
@@ -48,6 +49,8 @@
     .box {
         padding: 0.5em 2em; /* Padding reduzido */
         margin-top: 0; /* Removendo margem negativa */
+        
+        
     }
 
     .box h1:first-child,

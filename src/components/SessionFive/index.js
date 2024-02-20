@@ -5,6 +5,8 @@ import DevCine from "./ImgProjects/DevCine.png";
 import QuizMaster from "./ImgProjects/QuizMaster.png";
 import QuizAPI from "./ImgProjects/QuizApi.png";
 import Xperf from "./ImgProjects/Xperf.png";
+import GitHubFinder from "./ImgProjects/Githubfinder.png"
+import EmBreve from "./ImgProjects/EmBreve.png"
 
 const SessionFiveContainer = styled.div`
     display: flex;
@@ -87,12 +89,28 @@ const SessionFive = () => {
                     deployLink="https://quiz-master-api-node-js.vercel.app/"
                 />
                 <ProjectCard
+                    img={GitHubFinder}
+                    Titulo="Git-Hub Finder "
+                    Tecnologias="React, TypeScript, Sass, Vite, Api "
+                    Descricao="Um Projeto que usuarios podem pesquisar por nomes de usuário do GitHub e acessar informações detalhadas."
+                    codigoLink="https://github.com/Thiagof2755/GitHubFinder-React-Ts"
+                    deployLink="https://git-hub-finder-react-ts.vercel.app/"
+                />
+                <ProjectCard
                     img={Xperf}
                     Titulo="Xperf"
                     Tecnologias="Python, MySQL, Grafana"
                     Descricao="O Xperf é uma aplicação para coleta e análise eficiente de informações de desempenho de redes. Ele permite testes, monitoramento e avaliação da estabilidade e velocidade da rede de forma centralizada."
                     codigoLink="https://github.com/Thiagof2755/Xperf"
                     deployLink="https://github.com/Thiagof2755/Xperf"
+                />
+                <ProjectCard
+                    img={EmBreve}
+                    Titulo="Em Breve"
+                    Tecnologias="...Novidade,...Novidade"
+                    Descricao="Em Breve novidades vem ai, acompanhe meu Linkedin e fique sabendo o quanto antes"
+                    codigoLink="https://github.com/Thiagof2755"
+                    deployLink="https://github.com/Thiagof2755"
                 />
             </ProjectsContainer>
         </SessionFiveContainer>

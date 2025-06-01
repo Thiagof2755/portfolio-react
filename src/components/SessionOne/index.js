@@ -8,9 +8,9 @@ function SessionOne() {
         <div className={styles.container}>
             <div className={styles.space}>
                 <div className={styles.box}>
-                    <h1>OLA MEU NOME É</h1>
+                    <h1>OLÁ, EU SOU</h1>
                     <h1>THIAGO ALVES</h1>
-                    <h2>Transformando linhas de código em experiências digitais memoráveis</h2>
+                    <h2>Desenvolvedor apaixonado por criar soluções digitais inovadoras</h2>
                 </div>
                 <div className={`${styles.face} ${styles.shadow}`}>
                     <div className={styles.faceContainer}>
